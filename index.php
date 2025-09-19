@@ -1,30 +1,30 @@
 <?php 
 use Bramus\Router\Router;
 use Dotenv\Dotenv;
+
 /*===============================
 INCORPORANDO LA LIBRERIA VARIABLES 
 DE ENTORNO
+=================================*/
+require_once 'storage/logs/php_errors.php';
+require_once 'vendor/autoload.php';
 
-// Cargar .env solo si existe (en local)
+// Cargar .env solo en local
 if (file_exists(__DIR__ . '/.env')) {
     $dotenv = Dotenv::createImmutable(__DIR__);
     $dotenv->load();
 }
-=================================*/
- 
-require_once 'storage/logs/php_errors.php';
-require_once 'vendor/autoload.php';
 
-Dotenv::createImmutable(__DIR__)->load();
-
+// Configuración general
 require_once 'app/config/setting.php';
-
 require_once 'app/lib/Controls.php';
+require_once 'public/fpdf/fpdf.php'; /// reportes pdf => libreria fpdf
 
-require_once 'public/fpdf/fpdf.php';/// reportes pdf => libreria fpdf
-# requerimos el archivo router 
+# Router
 require_once 'autoload.php';
 $route = new Router;
+
+// Rutas
 require 'routes/web.php';
 require_once 'routes/Auth_route.php';
 require_once 'routes/citas.php';
@@ -47,7 +47,9 @@ require_once 'routes/movimiento.php';
 require_once 'routes/documento.php';
 require_once 'routes/serie.php';
 require_once 'routes/inventario.php';
+
 $route->run();
+
  
  
 

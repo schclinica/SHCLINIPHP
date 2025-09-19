@@ -4,6 +4,12 @@ use Dotenv\Dotenv;
 /*===============================
 INCORPORANDO LA LIBRERIA VARIABLES 
 DE ENTORNO
+
+// Cargar .env solo si existe (en local)
+if (file_exists(__DIR__ . '/.env')) {
+    $dotenv = Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+}
 =================================*/
  
 require_once 'storage/logs/php_errors.php';

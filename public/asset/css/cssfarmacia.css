@@ -1,0 +1,122 @@
+.card {
+    background-image: radial-gradient(circle at 40.37% 43.26%, #ffffff 0, #d5e5f0 50%, #acc7da 100%);
+}
+.header_card_farmacia{
+    background-image: radial-gradient(circle at 50% 50%, #89b3ff 0, #5491ee 50%, #0070d4 100%);
+}
+
+#lista_tipo_productos>thead>tr>th {
+    background-image: radial-gradient(circle at 60.89% 34.45%, #00dbf7 0, #29bfdc 25%, #38a2bd 50%, #3e869d 75%, #3e6d80 100%);
+    color: white;
+}
+
+#lista_presentacion>thead>tr>th {
+    background-image: radial-gradient(circle at 60.89% 34.45%, #00dbf7 0, #29bfdc 25%, #38a2bd 50%, #3e869d 75%, #3e6d80 100%);
+    color: white;
+}
+
+#lista_laboratorios>thead>tr>th {
+    background-image: radial-gradient(circle at 60.89% 34.45%, #00dbf7 0, #29bfdc 25%, #38a2bd 50%, #3e869d 75%, #3e6d80 100%);
+    color: white;
+}
+
+#lista_grupo_terapeuticos>thead>tr>th {
+    background-image: radial-gradient(circle at 60.89% 34.45%, #00dbf7 0, #29bfdc 25%, #38a2bd 50%, #3e869d 75%, #3e6d80 100%);
+    color: white;
+}
+
+#lista_embalajes>thead>tr>th {
+    background-image: radial-gradient(circle at 60.89% 34.45%, #00dbf7 0, #29bfdc 25%, #38a2bd 50%, #3e869d 75%, #3e6d80 100%);
+    color: white;
+}
+
+#lista_proveedores>thead>tr>th {
+    background-image: radial-gradient(circle at 60.89% 34.45%, #00dbf7 0, #29bfdc 25%, #38a2bd 50%, #3e869d 75%, #3e6d80 100%);
+    color: white;
+}
+
+#fecha_vencimiento {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+}
+
+#lista_productos>thead>tr>th {
+    background:linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+}
+#lista_clientes>thead>tr>th {
+    background-image: radial-gradient(circle at 60.89% 34.45%, #00dbf7 0, #29bfdc 25%, #38a2bd 50%, #3e869d 75%, #3e6d80 100%);
+    color: white;
+}
+#lista_detalle_venta>thead>tr>th,#lista_detalle_compra>thead>tr>th {
+     background:linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+    color: rgb(16, 111, 228);
+    font-size: 13px;
+    
+}
+#lista_detalle_venta>tbody>tr>td,#lista_detalle_compra>tbody>tr>td {
+    color:#181e8e;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    
+}
+#lista_search_cliente>thead>tr>th {
+    background:linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+}
+#lista_search_productos>thead>tr>th {
+    background:linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+}
+#lista_search_productos_compra>thead>tr>th {
+    background:linear-gradient(to bottom, rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+}
+#lista_historial_ventas>thead>tr>th {
+    background-color: #E6E6FA;
+    color: rgb(16, 111, 228);
+}
+ #fecha_emision_venta,#fecha_emision_compra,#serie_compra{
+    background-color: #acc7da;
+    color:#0070d4;
+    font-style: italic;
+    font-stretch: condensed;
+    border: 2px solid #5491ee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+ }
+ #serie,#monto_recibido,#vuelto{
+    background-color: #acc7da;
+    color:#0070d4;
+    font-style: italic;
+    font-stretch: condensed;
+    border: 2px solid #5491ee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+ }
+ #monto_recibido,#vuelto{
+    background-color: #f2f9fd;
+    color:#0070d4;
+    font-style: italic;
+    font-stretch: condensed;
+    border: 2px solid #5491ee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+ }
+ #documento_venta,#name_tipo_producto,#name_presentacion,#name_corto_presentacion,#proveedor_compra,#almacen{
+    background-color: #acc7da;
+    color:#0070d4;
+    font-style: italic;
+    font-stretch: condensed;
+    border: 2px solid #5491ee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    
+ }
+ #cliente_venta{
+    background-color: #b5ebaf;
+    color:#181e8e;
+    font-style: italic;
+    font-stretch: condensed;
+    border: 2px solid #5491ee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;  
+ }
+
+ 

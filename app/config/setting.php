@@ -8,7 +8,7 @@ try {
     $username = "tiwlnotwgl@shclinicaphp-server";
     $password = "rM$2WP0q2hk0WvW8";
     $ssl'] = true;
-    $ssl_verify'] = false;
+    $ssl_verify'] = true;
 
     // DSN con SSL habilitado (Azure lo requiere por defecto)
     $dsn = "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4";

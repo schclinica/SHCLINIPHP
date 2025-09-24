@@ -5,7 +5,7 @@ try {
     $host = "shclinicaphp-server.mysql.database.azure.com";
     $port = 3306;
     $dbname = "shclinicaphp-database";
-    $username = "tiwlnotwgl";
+    $username = "tiwlnotwgl@shclinicaphp-server";
     $password = "rM$2WP0q2hk0WvW8";
 
     // DSN con SSL habilitado (Azure lo requiere por defecto)

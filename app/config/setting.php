@@ -20,10 +20,7 @@ try {
         PDO::MYSQL_ATTR_SSL_CA => $ssl_ca_path,
     ];
 
-    // Conexión PDO
-    $pdo = new PDO($dsn, $username, $password, $options);
-
-    echo "✅ Conexión exitosa a Azure MySQL Flexible Server";
+        echo "✅ Conexión exitosa a Azure MySQL Flexible Server";
 
 } catch (PDOException $e) {
     die("❌ Error de conexión a la base de datos: " . $e->getMessage());

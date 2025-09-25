@@ -1,27 +1,30 @@
-<?php 
+<?php
 use Bramus\Router\Router;
 use Dotenv\Dotenv;
 
-/*===============================
-INCORPORANDO LA LIBRERIA VARIABLES 
-DE ENTORNO
-=================================*/
+// Autoload y logs
 require_once 'storage/logs/php_errors.php';
 require_once 'vendor/autoload.php';
 
-// Cargar .env solo en local
+// Cargar .env
 if (file_exists(__DIR__ . '/.env')) {
     $dotenv = Dotenv::createImmutable(__DIR__);
     $dotenv->load();
 }
 
-// Configuración general
+// Configuración general y librerías
 require_once 'app/config/setting.php';
 require_once 'app/lib/Controls.php';
-require_once 'public/fpdf/fpdf.php'; /// reportes pdf => libreria fpdf
+require_once 'public/fpdf/fpdf.php';
 
-# Router
-require_once 'autoload.php';
+// Trait de conexión
+require_once 'app/config/Conection.php';
+
+// Instancia de conexión
+class Database { use config\Conection; }
+$pdo = Database::getConection();
+
+// Router
 $route = new Router;
 
 // Rutas
@@ -48,7 +51,12 @@ require_once 'routes/documento.php';
 require_once 'routes/serie.php';
 require_once 'routes/inventario.php';
 
+// Ejecutar router
 $route->run();
+
+// Cerrar conexión al final (opcional)
+Database::closeDataBase();
+
 
  
  

@@ -13,10 +13,7 @@ $password = "rM$2WP0q2hk0WvW8";
 $ssl_ca_path = __DIR__ . "/app/config/DigiCertGlobalRootG2.crt.pem";
 
 try {
-    // DSN con sslmode
-    $dsn = "mysql:host=$host;port=$port;dbname=$dbname;charset=utf8mb4;sslmode=VERIFY_CA";
-
-    // Opciones PDO
+       // Opciones PDO
     $options = [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,

@@ -10,7 +10,7 @@ $username = "tiwlnotwgl@shclinicaphp-server";
 $password = "rM$2WP0q2hk0WvW8";
 
 // Ruta correcta al certificado SSL
-$ssl_ca_path = __DIR__ . "/app/config/certs/DigiCertGlobalRootCA.crt.pem";
+$ssl_ca_path = __DIR__ . "/app/config/DigiCertGlobalRootG2.crt.pem";
 
 try {
     // DSN con sslmode

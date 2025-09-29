@@ -42,6 +42,8 @@ require_once 'routes/documento.php';
 require_once 'routes/serie.php';
 require_once 'routes/inventario.php';
 $route->run();
+
+
  
  
 
